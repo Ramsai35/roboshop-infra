@@ -1,5 +1,4 @@
-resource "null_resource" "test" {
-  provisioner "local-exec" {
-    command = "echo ${var.env}"
-  }
+module "Network" {
+  source = "https://github.com/Ramsai35/tf-module-.git"
+  version = "Main"
 }
