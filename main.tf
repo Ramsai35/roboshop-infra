@@ -10,5 +10,5 @@ for_each          = var.vpc
 cidr_block        = each.value.cidr_block
 public_subnets    = each.value.public_subnets
 private_subnets   = each.value.private_subnets
-availability_zone = each.value.availability_zone
+availability_zone = each.value.availability_zones
 }
