@@ -1,4 +1,4 @@
-module "network" {
+module "VPC" {
     source = "github.com/Ramsai35/tf-module-vpc"
 
 
@@ -12,3 +12,11 @@ public_subnets    = each.value.public_subnets
 private_subnets   = each.value.private_subnets
 availability_zone = each.value.availability_zone
 }
+
+
+#module "DOCDB" {
+#    source        = "github.com/Ramsai35/tf-module-docdb"
+#    env           = var.env
+#    subnet_ids    = "??"
+#
+#}
