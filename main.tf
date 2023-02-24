@@ -25,5 +25,5 @@ module "docdb" {
 }
 
 output "vpc" {
-    value = module.VPC
+    value = module.vpc
 }
