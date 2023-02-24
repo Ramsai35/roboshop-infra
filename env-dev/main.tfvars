@@ -29,6 +29,14 @@ vpc = {
         nat_gw     = true
       }
     }
+docdb = {
+  main ={
+    vpc_name = "main"
+    subnets_name = "db"
+  }
+
+}
+
 
   }
 }
