@@ -27,10 +27,3 @@ module "docdb" {
 output "vpc" {
     value = module.vpc
 }
-
-#module "docdb" {
-#    source              = "github.com/Ramsai35/tf-module-docdb"
-#    env                 = var.env
-#
-#    subnet_ids          = "???"
-#}
