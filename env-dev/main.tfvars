@@ -54,3 +54,14 @@ rds = {
     instance_class      = "db.t3.small"
   }
 }
+
+rds = {
+  main = {
+    vpc_name            = "main"
+    subnets_name        = "db"
+    engine              = "redis"
+    engine_version      = "5.7.mysql_aurora.2.11.1"
+    number_of_instances = 1
+    instance_class      = "cache.t3.micro"
+  }
+}
